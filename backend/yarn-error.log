@@ -1,5 +1,5 @@
 Arguments: 
-  C:\Program Files\nodejs\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js add colors dotenv
+  C:\Program Files\nodejs\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js add nodemon@2.0.7
 
 PATH: 
   C:\Users\Noel\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\local\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\Noel\bin;C:\Program Files (x86)\Common Files\Intel\Shared Files\cpp\bin\Intel64;C:\ProgramData\Oracle\Java\javapath;C:\Program Files\Java\jdk-15.0.2\bin;C:\Program Files\nodejs;C:\Program Files (x86)\Yarn\bin;C:\Program Files\Git\cmd;C:\Program Files\dotnet;C:\Program Files (x86)\Java\jdk1.8.0;C:\Users\Noel\.dotnet\tools;C:\Users\Noel\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Noel\AppData\Roaming\npm;C:\Users\Noel\AppData\Local\Yarn\bin;C:\Program Files\Git\usr\bin\vendor_perl;C:\Program Files\Git\usr\bin\core_perl
@@ -32,7 +32,9 @@ npm manifest:
     "license": "ISC",
     "dependencies": {
       "bcryptjs": "^2.4.3",
+      "colors": "^1.4.0",
       "cors": "^2.8.5",
+      "dotenv": "^16.0.3",
       "express": "^4.18.2",
       "jsonwebtoken": "^8.5.1",
       "mongoose": "^6.8.0",
@@ -930,6 +932,11 @@ Lockfile:
     optionalDependencies:
       fsevents "~2.3.2"
   
+  colors@^1.4.0:
+    version "1.4.0"
+    resolved "https://registry.yarnpkg.com/colors/-/colors-1.4.0.tgz#c50491479d4c1bdaed2c9ced32cf7c7dc2360f78"
+    integrity sha512-a+UqTh4kgZg/SlGvfbzDHpgRu7AAQOmmqRHJnxhRZICKFUT91brVhNNt58CMWU9PsBbv3PDCZUHbVxuDiH2mtA==
+  
   concat-map@0.0.1:
     version "0.0.1"
     resolved "https://registry.yarnpkg.com/concat-map/-/concat-map-0.0.1.tgz#d8a96bd77fd68df7793a73036a3ba0d5405d477b"
@@ -995,6 +1002,11 @@ Lockfile:
     version "1.2.0"
     resolved "https://registry.yarnpkg.com/destroy/-/destroy-1.2.0.tgz#4803735509ad8be552934c67df614f94e66fa015"
     integrity sha512-2sJGJTaXIIaR1w4iJSNoN0hnMY7Gpc/n8D4qSCJw8QqFWXf7cuAgnEHxBpweaVcPevC2l3KpjYCx3NypQQgaJg==
+  
+  dotenv@^16.0.3:
+    version "16.0.3"
+    resolved "https://registry.yarnpkg.com/dotenv/-/dotenv-16.0.3.tgz#115aec42bac5053db3c456db30cc243a5a836a07"
+    integrity sha512-7GO6HghkA5fYG9TYnNxi14/7K9f5occMlp3zXAuSxn7CKCxt9xbNWG7yF8hTCSUchlfWSe3uLmlPfigevRItzQ==
   
   ecdsa-sig-formatter@1.0.11:
     version "1.0.11"

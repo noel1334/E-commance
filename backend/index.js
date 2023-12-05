@@ -1,5 +1,6 @@
 import express from "express";
 import userRoute from "./routes/userRoute.js";
+import authRoute from "./routes/authRoute.js";
 import {dbConnect} from "./db.js"
 // import productsRoute from "./routes/productsRoute.js";
 
@@ -11,6 +12,7 @@ app.use(express.urlencoded({ extends: false }));
 const PORT = process.env.PORT || 5000;
 
 app.use("/api/users", userRoute);
+app.use("/api/auth", authRoute);
 // app.use("/api/products", productsRoute);
 
 app.listen(3000, () => {
