@@ -1,0 +1,106 @@
+/* About Page Styling */
+.about-container {
+  background: #f7f7f7; 
+  display: flex;
+  gap: 40px;
+  margin: 50px auto;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  flex-wrap: wrap; 
+  justify-content: center;
+}
+
+/* About Icons */
+.about_icons {
+  background: rgb(231, 96, 6); 
+  border-radius: 50%;
+  height: 60px;
+  width: 60px;
+  font-size: 24px;
+  display: grid;
+  place-items: center;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  color: white;
+  transition: transform 0.3s ease;
+}
+
+.about_icons:hover {
+  transform: scale(1.1); 
+}
+
+/* About Satisfaction Card */
+.about-satifac {
+  max-width: 350px; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 15px;
+  padding: 20px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about-satifac:hover {
+  transform: translateY(-10px); 
+  box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+.satifac b {
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.satifac p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: rgb(78, 78, 82);
+  text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .about-container {
+    padding: 20px;
+    gap: 30px;
+  }
+
+  .about-satifac {
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-container {
+    flex-direction: column; 
+    align-items: center;
+    padding: 15px;
+  }
+
+  .about-satifac {
+    max-width: 100%; 
+  }
+
+  .satifac p {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .about_icons {
+    height: 50px;
+    width: 50px;
+    font-size: 20px;
+  }
+
+  .satifac b {
+    font-size: 1rem;
+  }
+
+  .satifac p {
+    font-size: 0.85rem;
+  }
+}

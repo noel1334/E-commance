@@ -1,0 +1,11 @@
+/* Product Grid Container */
+.allproduct {
+display: flex;
+flex-wrap: wrap;
+gap: 20px;
+}
+
+/* Responsive Behavior */
+@media (max-width: 640px) {
+  
+}

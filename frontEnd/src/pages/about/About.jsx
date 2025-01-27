@@ -1,4 +1,5 @@
 import React from "react";
+import "./about.css";
 import { FaSearchPlus, FaThumbsUp, FaDeaf } from "react-icons/fa";
 
 const AboutPage = () => {

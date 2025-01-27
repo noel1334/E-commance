@@ -1,10 +1,11 @@
 import { useEffect, useState, useRef } from "react";
 import { Country, State, City } from "country-state-city";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import CurrencyFormat from "react-currency-format";
 import { useSelector } from "react-redux";
-
+import "./checkout.css";
 const CheckoutPage = () => {
+  const navigate = useNavigate();
   const countries = Country.getAllCountries();
   const [country, setCountry] = useState("");
   const [state, setState] = useState([]);
@@ -15,6 +16,13 @@ const CheckoutPage = () => {
   const cart = useSelector((state) => {
     return state.cart.cart;
   });
+  const user = useSelector((state) => {
+    return state.user.user;
+  });
+
+  // if (!user) {
+  //   navigate("/auth");
+  // }
 
   const slide1 = useRef(null);
   const slide2 = useRef(null);
@@ -51,7 +59,6 @@ const CheckoutPage = () => {
 
   return (
     <div>
-      {/* <MultiStep activeStep={0} showNavigation={true} steps={steps} /> */}
       <div className="checkout_container" style={{ height: `${formHeight}px` }}>
         <div className="Shipping-container">
           <div className="Shipping-text">
@@ -192,20 +199,6 @@ const CheckoutPage = () => {
             </div>
           </section>
           <section ref={slide2}>
-            {/* <div className="Shipping-container">
-              <div className="Shipping-text">
-                <p>1</p>
-                <p>Billing & Shipping</p>
-              </div>
-              <div className="Shipping-text">
-                <p>2</p>
-                <p>Order</p>
-              </div>
-              <div className="Shipping-text">
-                <p style={{ position: "relative", zIndex: "3" }}>3</p>
-                <p>Payment</p>
-              </div>
-            </div> */}
             <div className="shopcart-container2">
               <table>
                 <thead>
@@ -245,7 +238,6 @@ const CheckoutPage = () => {
                             />
                           </div>
                         </td>
-                        {/* <td>hello</td> */}
                       </tr>
                     );
                   })
@@ -328,21 +320,6 @@ const CheckoutPage = () => {
             </div>
           </section>
           <section ref={slide3}>
-            {/* <div className="Shipping-container">
-              <div className="Shipping-text">
-                <p>1</p>
-                <p>Billing & Shipping</p>
-              </div>
-              <div className="Shipping-text">
-                <p>2</p>
-                <p>Order</p>
-              </div>
-              <div className="Shipping-text">
-                <p style={{ position: "relative", zIndex: "3" }}>3</p>
-                <p>Payment</p>
-              </div>
-            </div> */}
-
             <div className="deliverytype">
               <div>
                 <h3>PAYMENT METHOD</h3>

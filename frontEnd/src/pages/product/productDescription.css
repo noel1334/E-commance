@@ -1,0 +1,165 @@
+.discription-container {
+  margin: 20px;
+  padding: 20px;
+  box-shadow: 2px 3px 5px rgba(73, 73, 73, 0.822);
+}
+
+.product-disc {
+  background: white;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  gap: 20px;
+}
+
+.product-dis-img {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  border: #dde0dd 1px solid;
+}
+
+.product-dis-img img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  object-fit: cover;
+}
+
+.dis-title {
+  font-size: larger;
+  color: #6a6d6a;
+  text-align: center; /* Center-align text for smaller screens */
+}
+
+.price {
+  margin: 10px 0;
+  gap: 20px;
+  display: flex;
+  flex-wrap: wrap; /* Wrap content on smaller screens */
+  justify-content: center;
+  font-size: large;
+}
+.price strike {
+  color: #6a6d6a;
+  font-weight: bolder;
+}
+
+.price b {
+  color: #ee790b;
+  font-weight: bolder;
+}
+
+.dis-text b {
+  margin: 10px 0;
+  color: #767976;
+  font-size: large;
+  text-align: center;
+}
+
+.dis-text p {
+  margin: 10px 0;
+  color: #878a87;
+  font-size: small;
+  text-indent: 25px;
+  text-align: justify;
+}
+
+.qauntity-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  position: relative;
+  padding: 10px 0;
+}
+
+.qauntity {
+  display: flex;
+  gap: 5px;
+}
+
+.qauntity input {
+  color: #6a6d6a;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  outline: none;
+  border: 1px solid rgb(214, 216, 219);
+}
+
+.qauntity p {
+  width: 30px;
+  height: 40px;
+  border: 1px solid rgb(214, 216, 219);
+  margin: 0 2px;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+}
+
+.qauntity-btn {
+  display: flex;
+  flex-wrap: wrap; /* Allow buttons to wrap */
+  justify-content: center;
+  gap: 10px;
+}
+
+.qauntity-btn b {
+  display: inline-block;
+  padding: 15px;
+  cursor: pointer;
+  background: #f18407;
+  color: white;
+  margin-right: 5px;
+}
+
+b.VIEW {
+  padding: 15px;
+  cursor: pointer;
+  background: #f0edea;
+  color: rgb(19, 17, 17);
+  margin-right: 5px;
+  text-decoration: none;
+}
+
+.qauntity-btn b:hover {
+  background: #1b790f;
+  color: rgb(245, 248, 246);
+}
+
+.socio-container2 {
+  display: flex;
+  margin-top: 20px;
+  flex-wrap: wrap; /* Wrap icons */
+  justify-content: center;
+  gap: 10px; /* Add spacing between icons */
+}
+
+.social-ic {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.social-ic p {
+  font-size: small;
+  margin: 0;
+}
+
+@media (min-width: 768px) {
+  .product-disc {
+    flex-direction: row;
+  }
+
+  .dis-title {
+    text-align: left; 
+  }
+}
+
+@media (min-width: 1024px) {
+  .discription-container {
+    margin: 20px 110px 10px 130px; 
+  }
+}

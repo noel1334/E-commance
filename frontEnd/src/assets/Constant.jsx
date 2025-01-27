@@ -78,7 +78,8 @@ export const shopCategory = [
 ];
 export const productSample = [
   {
-    id: 1,
+    _id: 1,
+    name: "product1",
     desc: "NOW Foods EGCg Green...",
     price: 22000.0,
     discount: 6,
@@ -87,7 +88,8 @@ export const productSample = [
   },
 
   {
-    id: 2,
+    _id: 2,
+    name: "product2",
     desc: "Adoramyo",
     price: 16000.0,
     discount: 7,
@@ -95,7 +97,8 @@ export const productSample = [
     quantity: 1,
   },
   {
-    id: 3,
+    _id: 3,
+    name: "product3",
     desc: "Adoramyo",
     price: 16000.0,
     discount: 7,
@@ -103,7 +106,8 @@ export const productSample = [
     quantity: 1,
   },
   {
-    id: 4,
+    _id: 4,
+    name: "product4",
     desc: "dmannos",
     price: 25000.0,
     discount: 8,
@@ -111,7 +115,8 @@ export const productSample = [
     quantity: 1,
   },
   {
-    id: 5,
+    _id: 5,
+    name: "product5",
     desc: "Garden of Life mykind ...",
     price: 25000.0,
     discount: 10,
@@ -119,7 +124,8 @@ export const productSample = [
     quantity: 1,
   },
   {
-    id: 6,
+    _id: 6,
+    name: "product6",
     desc: "Jarrow Formulas Myo Inosi...",
     price: 25000.0,
     discount: 2,
@@ -127,7 +133,8 @@ export const productSample = [
     quantity: 1,
   },
   {
-    id: 7,
+    _id: 7,
+    name: "product7",
     desc: "pancreatin-",
     price: 35000.0,
     discount: 7,
@@ -135,7 +142,8 @@ export const productSample = [
     quantity: 1,
   },
   {
-    id: 8,
+    _id: 8,
+    name: "product8",
     desc: "strawberry",
     price: 24000.0,
     discount: 5,
@@ -143,7 +151,8 @@ export const productSample = [
     quantity: 1,
   },
   {
-    id: 9,
+    _id: 9,
+    name: "product9",
     desc: "Nature’s Way Uva Ursi Le...",
     price: 24000.0,
     discount: 5,
@@ -151,7 +160,8 @@ export const productSample = [
     quantity: 1,
   },
   {
-    id: 10,
+    _id: 10,
+    name: "product10",
     desc: "idole",
     price: 16000.0,
     discount: 4,
@@ -159,7 +169,8 @@ export const productSample = [
     quantity: 1,
   },
   {
-    id: 11,
+    _id: 11,
+    name: "product11",
     desc: "Bronson-k2d3",
     price: 17000.0,
     discount: 6,
@@ -167,7 +178,8 @@ export const productSample = [
     quantity: 1,
   },
   {
-    id: 12,
+    _id: 12,
+    name: "product12",
     desc: "chlorophyll-mint",
     price: 17000.0,
     discount: 3,
@@ -175,7 +187,8 @@ export const productSample = [
     quantity: 1,
   },
   {
-    id: 13,
+    _id: 13,
+    name: "product13",
     desc: "gol-once-women..",
     price: 25000.0,
     discount: 5,
@@ -183,7 +196,8 @@ export const productSample = [
     quantity: 1,
   },
   {
-    id: 14,
+    _id: 14,
+    name: "product14",
     desc: "hyponidd2x",
     price: 46000.0,
     discount: 2,
@@ -191,7 +205,8 @@ export const productSample = [
     quantity: 1,
   },
   {
-    id: 15,
+    _id: 15,
+    name: "product15",
     desc: "raspberry-leaf-tea..",
     price: 25000.0,
     discount: 4,
@@ -199,7 +214,8 @@ export const productSample = [
     quantity: 1,
   },
   {
-    id: 16,
+    _id: 16,
+    name: "product16",
     desc: "dim3001...",
     price: 19000.0,
     discount: 3,
@@ -207,7 +223,8 @@ export const productSample = [
     quantity: 1,
   },
   {
-    id: 17,
+    _id: 17,
+    name: "product17",
     desc: "msmpwd...",
     price: 10000.0,
     discount: 2,
@@ -215,7 +232,8 @@ export const productSample = [
     quantity: 1,
   },
   {
-    id: 18,
+    _id: 18,
+    name: "product18",
     desc: "iced-coffee...",
     price: 10000.0,
     discount: 2,
@@ -223,7 +241,8 @@ export const productSample = [
     quantity: 1,
   },
   {
-    id: 19,
+    _id: 19,
+    name: "product19",
     desc: "spearmint-tea...",
     price: 10000.0,
     discount: 2,

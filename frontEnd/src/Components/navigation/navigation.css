@@ -1,0 +1,180 @@
+/* General Styling for Navigation */
+.navBar {
+  background-color: #107510;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.nav-items {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  padding: 0 20px;
+}
+
+.nav-items .li {
+  padding: 20px 0;
+  cursor: pointer;
+  position: relative;
+  font-size: 16px;
+  font-weight: 500;
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.navBar li:hover {
+  color: #060706;
+}
+
+/* Dropdown Menu Styling */
+.nav-list {
+  position: relative;
+}
+
+.dropdown-nav {
+  display: none;
+  list-style: none;
+  position: absolute;
+  top: 50px;
+  left: 0;
+  background-color: white;
+  color: rgb(46, 43, 43);
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.4);
+  border-radius: 4px;
+  z-index: 100;
+  min-width: 150px;
+}
+
+.dropdown-list {
+  padding: 10px 20px;
+  white-space: nowrap;
+  border-bottom: 1px solid gray;
+  transition: background-color 0.2s ease;
+}
+
+.dropdown-list:last-child {
+  border-bottom: none;
+}
+
+.dropdown-list:hover {
+  background-color: #f0f0f0;
+  scale: 1.02;
+}
+
+.nav-list:hover .dropdown-nav {
+  display: block;
+  scale: 1.05;
+  color: #21b921;
+}
+
+/* Responsive Design: Medium Screens (md) */
+@media (max-width: 1024px) {
+  .nav-items {
+    margin-left: 0;
+    justify-content: flex-start;
+    gap: 15px;
+  }
+
+  .navBar {
+    padding: 10px 20px;
+  }
+
+  /* Hide navigation items on smaller screens */
+  .nav-items {
+    display: none;
+  }
+
+  .navBar.open .nav-items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color: #107510;
+  }
+
+  .li {
+    padding: 15px 20px;
+    width: 100%;
+    text-align: center;
+  }
+
+  /* Hamburger Menu */
+  .hamburger {
+    display: block;
+    cursor: pointer;
+    font-size: 28px;
+    color: white;
+  }
+
+  .dropdown-nav {
+    top: 35px;
+  }
+
+  /* For dropdown in mobile view */
+  .dropdown-nav {
+    left: 0;
+    min-width: 100%;
+  }
+}
+
+/* Small Screens (sm) */
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  .nav-items {
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .navBar.open .nav-items {
+    display: flex;
+  }
+
+  .li {
+    padding: 15px 0;
+    text-align: center;
+  }
+
+  /* Hide dropdown menu on smaller screens */
+  .dropdown-nav {
+    display: none;
+  }
+
+  .nav-list:hover .dropdown-nav {
+    display: none;
+  }
+
+  .nav-list .dropdown-nav {
+    display: none;
+  }
+}
+
+/* Login PAge Styling */
+.login-container {
+  width: 500px;
+  padding: 25px;
+  /* background: white; */
+}
+
+.privacy {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 15px;
+  color: #6a6d6a;
+}
+
+.privacy span {
+  color: #107510;
+  cursor: pointer;
+}
+
+.privacy span:hover {
+  color: green;
+  cursor: pointer;
+  opacity: 1;
+  text-decoration: underline cyan;
+}

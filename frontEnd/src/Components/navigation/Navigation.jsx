@@ -1,6 +1,7 @@
-import { navBar, healthGoal } from "../assets/Constant";
+import { navBar, healthGoal } from "../../assets/Constant";
+import "./navigation.css";
 
-export const Navegation = () => {
+export const Navigation = () => {
   return (
     <nav className="navBar">
       <ul className="nav-items">

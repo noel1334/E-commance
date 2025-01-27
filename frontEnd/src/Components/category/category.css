@@ -1,0 +1,61 @@
+/* Shop Category Styling */
+.shop-container {
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 0  10px;
+  max-width: 200px;
+  min-width: 150px;
+  flex: 1; 
+}
+
+.shop-container h3 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  /* margin-bottom: 15px; */
+  color: #333;
+  text-align: center;
+}
+
+
+
+.sup-nav {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.sup-nav li {
+  display: flex;
+  align-items: center;
+  padding: 10px 8px;
+  cursor: pointer;
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  transition: all 0.2s ease-in-out;
+  color: #333;
+  font-size: 0.95rem;
+}
+
+.sup-nav li:hover {
+  background-color: #0d770d;
+  color: white;
+  transform: scale(1.05);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.sup-nav li:active {
+  transform: scale(1.03);
+}
+
+/* Remove bottom border for the last item */
+.sup-nav li:last-child {
+  border-bottom: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .shop-container {
+    display: none; /* Hide the category section on smaller screens */
+  }
+}

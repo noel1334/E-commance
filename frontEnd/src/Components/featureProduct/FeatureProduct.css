@@ -1,0 +1,117 @@
+/* product items styling */
+
+.product-container {
+    margin-top: 30px;
+    width: 200px;
+    height: 260px;
+    background: white;
+  }
+  
+  .product-items {
+    margin-top: 10px;
+    margin-right: 5px;
+    height: 260px;
+    width: 200px;
+    cursor: pointer;
+  }
+  
+  .percent {
+    height: 20px;
+    width: 30px;
+    display: grid;
+    place-items: center;
+    background-color: red;
+    color: white;
+    cursor: default;
+  }
+  .imgg {
+    height: 180px;
+    width: 150px;
+    object-fit: cover;
+  }
+  
+  .product-image {
+    padding-right: 10px;
+    margin-left: 15px;
+    display: flex;
+    /* height: 200px; */
+    width: 255px;
+    /* justify-items: end; */
+  }
+  .image-cart {
+    border: gray 1px solid;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    display: grid;
+    place-items: center;
+    visibility: hidden;
+  }
+  .image-cart:hover {
+    background: green;
+    opacity: 1;
+    transform: scale(1.1);
+    transition-duration: 1s;
+  }
+  .quick-view p {
+    width: 200px;
+    text-align: center;
+    background-color: #107510;
+    color: white;
+    opacity: 0.7;
+    height: 30px;
+    visibility: hidden;
+  }
+  .quick-view p:hover {
+    opacity: 1;
+    color: white;
+  }
+  .img-infor {
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .img-infor:hover {
+    color: #293d29;
+  }
+  
+  .product-items:hover .quick-view p {
+    transition-duration: 1s;
+    transform: translateY(-35%);
+    transition-delay: 0.5s;
+    color: white;
+    visibility: visible;
+  }
+  .product-items:hover .image-cart {
+    transition-duration: 1s;
+    transition-delay: 40ms;
+    color: white;
+    visibility: visible;
+  }
+  
+  .product-items:hover {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+    height: 260px;
+    width: 200px;
+    background: white;
+    transition-duration: 1s;
+    transition-delay: 10ms;
+    scale: 1.01;
+  }
+  .product-price {
+    /* margin-top: 20px; */
+    width: 200px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  .product-price p:last-child {
+    color: rgb(236, 130, 8);
+    font-weight: bolder;
+  }
+  .product-price strike:first-child {
+    color: rgb(48, 47, 46);
+    font-weight: bolder;
+  }
+  

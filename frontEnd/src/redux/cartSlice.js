@@ -13,29 +13,29 @@ export const cartSlice = createSlice({
     add: (state, action) => {
       if (state.cart.length < 1) {
         state.cart.push(action.payload);
-        state.id.push(action.payload.id);
-      } else if (state.id.includes(action.payload.id)) {
-        toast.warning(`${action.payload.desc} is already in your cart`);
+        state.id.push(action.payload._id);
+      } else if (state.id.includes(action.payload._id)) {
+        toast.warning(`${action.payload.name} is already in your cart`);
       } else {
         state.cart.push(action.payload);
-        state.id.push(action.payload.id);
-        toast.success(`${action.payload.desc} is added in your cart`);
+        state.id.push(action.payload._id);
+        toast.success(`${action.payload.name} is added in your cart`);
       }
     },
     remove: (state, action) => {
       state.cart = state.cart.filter((item) => {
-        return item.id !== action.payload;
+        return item._id !== action.payload;
       });
     },
     increase: (state, action) => {
       let product = state.cart.find((item) => {
-        return item.id === action.payload;
+        return item._id === action.payload;
       });
       product.quantity += 1;
     },
     decrease: (state, action) => {
       let product = state.cart.find((item) => {
-        return item.id === action.payload;
+        return item._id === action.payload;
       });
       if (product.quantity > 1) {
         product.quantity -= 1;
@@ -46,12 +46,3 @@ export const cartSlice = createSlice({
 
 export const { add, remove, increase, decrease } = cartSlice.actions;
 export default cartSlice.reducer;
-// if (
-//   state.cart.some((item) => {
-//     item.id !== action.payload.id;
-//   })
-// ) {
-//   state.cart.push(action.payload);
-// } else {
-//   alert("this");
-// }
